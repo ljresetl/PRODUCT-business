@@ -89,7 +89,7 @@ button {
   text-align: center;
   min-width: 350px;
   max-width: 370px;
-  padding: 100px 10px;
+  padding: 100px 4px;
 }
 
 .menu-list,
@@ -826,12 +826,110 @@ button {
   margin-bottom: 32px;
 }
 
-.boost-images {
-  background-color: #02897a;
+/* Секція одинадцять ФУТЕР */
+
+.footer-container {
+  flex-direction: column;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 45px;
 }
 
-.boost-main-img {
+.footer-logo {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.social-icon {
+  background-color: transparent;
+  stroke: #02897a;
+  fill: #edfffc;
+  border: none;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 32px;
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.footer-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #22343d;
+}
+
+.footer-menu-li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.1875;
+  text-align: center;
+  color: #22343d;
+}
+
+.footer-nav {
+  margin-bottom: 32px;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 34px;
+  width: 280px;
+}
+
+.footer-signup {
+  width: 325px;
+  height: 48px;
+  margin-bottom: 21px;
+}
+
+.footer-input {
+  width: 100%;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #bcd0e5;
+  align-items: center;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 325px;
+  height: 48px;
+}
+
+.footer-btn {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 131px;
+  height: 39px;
   background-color: #02897a;
-  box-shadow: 0 4px 31px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+  padding: 7px 15px;
+  margin-bottom: 44px;
+}
+
+.footer-text-two {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  color: #22343d;
 }
