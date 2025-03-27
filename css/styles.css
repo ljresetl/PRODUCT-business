@@ -719,7 +719,119 @@ button {
   flex-direction: column;
 }
 
+.reviews-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.67647;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  margin-bottom: 8px;
+}
+
+.reviews-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 32px;
+  max-width: 323px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+}
+
 .star-icon {
-  max-width: 18px;
-  max-height: 18px;
+  max-width: 19px;
+  max-height: 19px;
+  fill: #f3cd03;
+}
+
+.review-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #32454f;
+}
+
+.review-author {
+  display: flex;
+  align-items: center; /* Вирівнюємо елементи по вертикалі */
+  gap: 14px; /* Відступ між фото та текстом */
+}
+
+.review-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
+
+.review-position {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #252b42;
+}
+
+.review-name:focus {
+  font-size: 20px;
+}
+
+/* Секція десять Join 100 Compannies who boost their business with Product */
+
+.boost-container {
+  flex-direction: column;
+  background-color: #02897a;
+  border-radius: 32px;
+  padding-top: 0;
+}
+
+.boost-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.514;
+  text-align: center;
+  color: #fff;
+  padding-top: 17px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 72px;
+}
+
+.boost-btn {
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  padding: 10px 34px;
+  margin-bottom: 32px;
+}
+
+.boost-images {
+  background-color: #02897a;
+}
+
+.boost-main-img {
+  background-color: #02897a;
+  box-shadow: 0 4px 31px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
 }
