@@ -73,7 +73,7 @@ input::placeholder {
 
 a,
 button {
-  cursor: url("/img/cursor.svg"), pointer;
+  cursor: pointer;
 }
 
 button {
@@ -92,9 +92,26 @@ button {
   padding: 100px 10px;
 }
 
+@media screen and (min-width: 1400px) {
+  .container {
+    min-width: 1130px;
+  }
+}
+
 .menu-list,
 .auth-buttons {
   display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .menu-list,
+  .auth-buttons {
+    display: inline-block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
 }
 
 .main-logo-button-svg,
@@ -126,6 +143,82 @@ button {
   padding-top: 17px;
   padding-bottom: 17px;
   justify-content: center;
+}
+
+@media screen and (min-width: 1400px) {
+  .menu-list {
+    display: flex;
+    gap: 30px;
+    margin-right: 73px;
+  }
+
+  .main-logo-text {
+    margin-right: 237px;
+    margin-left: 16px;
+  }
+
+  .menu-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #22343d;
+  }
+
+  .menu-link:focus {
+    font-weight: 600;
+  }
+
+  .menu-link:hover {
+    font-weight: 600;
+  }
+
+  .sign-in {
+    width: 105px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #173a56;
+    padding: 9px 23px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+  }
+
+  .sign-in:hover {
+    width: 113px;
+    height: 42px;
+    background-color: #02897a;
+    color: #fff;
+  }
+
+  .sign-in:focus {
+    background-color: #02897a;
+    color: #fff;
+  }
+
+  .sign-up {
+    width: 105px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #173a56;
+    padding: 9px 21px;
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+  }
+
+  .sign-up:hover {
+    width: 113px;
+    height: 42px;
+    background-color: #02897a;
+    color: #fff;
+  }
+
+  .sign-up:focus {
+    background-color: #02897a;
+    color: #fff;
+  }
 }
 
 /* Секція один Work at the speed of thought */
@@ -180,6 +273,34 @@ button {
 
 .icon-triangle {
   fill: #02897a;
+}
+
+@media screen and (min-width: 1400px) {
+  .one-section-container {
+    padding-top: 25px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    gap: 35px;
+  }
+
+  .one-section-text-knopka {
+    width: 465px;
+    height: 331px;
+  }
+
+  .one-section-h {
+    font-size: 40px;
+  }
+
+  .primary {
+    width: 178px;
+    height: 53px;
+    padding: 15px 41px;
+  }
+
+  .buttons {
+    gap: 30px;
+  }
 }
 
 /* Секція два Product  was Built Specifically for You */
@@ -268,6 +389,37 @@ button {
   color: #fff;
 }
 
+@media screen and (min-width: 1400px) {
+  .two-section-title {
+    max-width: 535px;
+  }
+
+  .features-wrapper {
+    gap: 30px;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
+
+  .feature {
+    width: 255px;
+    align-items: flex-start;
+  }
+
+  .icon-container {
+    margin-bottom: 18px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .two-section-h3 {
+    margin-bottom: 13px;
+  }
+
+  .two-section-p {
+    text-align: left;
+  }
+}
+
 /* Секція три Management */
 .tree-section-container {
   flex-direction: column;
@@ -311,6 +463,26 @@ button {
   line-height: 1.625;
   color: #22343d;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1400px) {
+  .tree-section-container {
+    flex-direction: row-reverse;
+    gap: 84px;
+    text-align: left;
+  }
+
+  .text-content {
+    width: 486px;
+  }
+
+  .main-title {
+    margin-bottom: 25px;
+  }
+
+  .description {
+    margin-bottom: 30px;
+  }
 }
 
 /* Секція чотири Customer Support */
@@ -383,6 +555,27 @@ button {
   fill: #fff;
 }
 
+@media screen and (min-width: 1400px) {
+  .four-section-container {
+    flex-direction: row;
+    padding-top: 0;
+    gap: 84px;
+    text-align: left;
+  }
+
+  .four-section-content {
+    width: 550px;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .section-description {
+    margin-bottom: 30px;
+  }
+}
+
 /* Секція пьять Collaborative */
 
 .five-section-container {
@@ -428,6 +621,31 @@ button {
   line-height: 1.625;
   color: #22343d;
   margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1400px) {
+  .five-section-container {
+    flex-direction: row-reverse;
+    gap: 84px;
+    text-align: left;
+    padding-bottom: 150px;
+  }
+
+  .photo-content {
+    width: 486px;
+  }
+
+  .photo-title {
+    margin-bottom: 25px;
+  }
+
+  .photo-description {
+    margin-bottom: 30px;
+  }
+
+  .photo-text {
+    margin-bottom: 25px;
+  }
 }
 
 /* Секція шість Quick & Easy Process */
@@ -505,6 +723,44 @@ button {
   padding: 15px 30px;
 }
 
+@media screen and (min-width: 1400px) {
+  .process-title {
+    margin-bottom: 25px;
+  }
+
+  .process-description {
+    width: 542px;
+  }
+
+  .process-list {
+    flex-direction: row;
+    gap: 100px;
+    max-width: 916px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .process-item-block-two,
+  .process-item-block-one {
+    width: 408px;
+  }
+
+  .process-item-block-two {
+    flex-direction: column-reverse;
+  }
+
+  .process-item {
+    gap: 20px;
+  }
+
+  .process-text {
+    padding: 13px 20px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 34px 34px 68px #d3d3d3, -34px -34px 68px #ededed;
+  }
+}
+
 /* Секція сім Contents Strategies */
 
 .content-container {
@@ -554,6 +810,42 @@ button {
   font-size: 24px;
   line-height: 1.66667;
   color: #22343d;
+}
+
+@media screen and (min-width: 1400px) {
+  .content-container {
+    padding-top: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .content-title {
+    margin-bottom: 10px;
+  }
+
+  .content-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .content-description {
+    width: 465px;
+    text-align: left;
+  }
+
+  .content-author {
+    margin-bottom: 12px;
+  }
+
+  .content-item {
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 27px 27px 53px #d3d3d3, -27px -27px 53px #ededed;
+  }
+
+  .content-heading {
+    max-width: 296px;
+  }
 }
 
 /* Секція вісім Price Table */
