@@ -757,7 +757,7 @@ button {
     padding: 13px 20px;
     border-radius: 50px;
     background: #e0e0e0;
-    box-shadow: 34px 34px 68px #d3d3d3, -34px -34px 68px #ededed;
+    box-shadow: 39px 39px 78px #acacac, -39px -39px 78px #ffffff;
   }
 }
 
@@ -1005,6 +1005,52 @@ button {
   color: #2b7a4b;
 }
 
+@media screen and (min-width: 1400px) {
+  .pricing-container {
+    padding-bottom: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .pricing-list {
+    flex-direction: row;
+    gap: 72px;
+    justify-content: space-between;
+  }
+
+  .pricing-card {
+    width: 322px;
+    height: 456px;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #f6f6f6;
+  }
+
+  .pricing-title {
+    margin-bottom: 10px;
+  }
+
+  .pricing-subtitle {
+    margin-bottom: 40px;
+  }
+
+  .pricing-value {
+    gap: 7px;
+  }
+
+  .dollar-standard-plan-svg {
+    margin-bottom: 4px;
+  }
+
+  .plan {
+    margin-bottom: 16px;
+  }
+
+  .pricing-features {
+    margin-bottom: 30px;
+  }
+}
+
 /* Секція девять What Clients Say */
 
 .reviews-container {
@@ -1029,6 +1075,13 @@ button {
   color: #22343d;
   margin-bottom: 32px;
   max-width: 323px;
+}
+
+.break-mobile {
+  display: block;
+}
+.break-desktop {
+  display: inline;
 }
 
 .reviews-list {
@@ -1083,6 +1136,38 @@ button {
 
 .review-name:focus {
   font-size: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .reviews-title {
+    margin-bottom: 10px;
+    line-height: 1.78125;
+  }
+
+  .reviews-subtitle {
+    margin-bottom: 40px;
+    max-width: 537px;
+  }
+
+  .break-mobile {
+    display: inline;
+  }
+  .break-desktop {
+    display: block;
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    gap: 64px;
+  }
+
+  .review-card {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    width: 327px;
+    height: 240px;
+    background-color: #fff;
+  }
 }
 
 /* Секція десять Join 100 Compannies who boost their business with Product */
