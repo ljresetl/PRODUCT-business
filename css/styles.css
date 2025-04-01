@@ -1288,6 +1288,13 @@ button {
   margin-bottom: 32px;
 }
 
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .footer-text {
   font-weight: 500;
   font-size: 20px;
@@ -1342,21 +1349,48 @@ button {
 @media screen and (min-width: 1400px) {
   .footer-container {
     flex-direction: row;
+    align-items: flex-start;
     padding-top: 100px;
   }
 
   .logo-socials {
     display: flex;
     flex-direction: column;
+    margin-right: 146px;
+    gap: 18px;
   }
 
   .footer-logo {
     gap: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 0;
   }
 
   .footer-socials {
     margin-bottom: 0;
     gap: 16px;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 129px;
+    align-items: flex-start;
+  }
+
+  .footer-menu-li {
+    text-align: left;
+  }
+
+  .footer-nav-two {
+    margin-right: 83px;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+
+  .footer-text {
+    text-align: left;
   }
 }
