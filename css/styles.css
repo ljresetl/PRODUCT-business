@@ -1177,6 +1177,8 @@ button {
   background-color: #02897a;
   border-radius: 32px;
   padding-top: 0;
+  padding-bottom: 0;
+  gap: 32px;
 }
 
 .boost-title {
@@ -1201,6 +1203,32 @@ button {
   color: #02897a;
   padding: 10px 34px;
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1400px) {
+  .boost-container {
+    flex-direction: row;
+    min-width: 968px;
+    gap: 84px;
+    min-height: 345px;
+  }
+
+  .boost-title-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .boost-title {
+    text-align: left;
+    max-width: 436px;
+    margin-bottom: 46px;
+    padding: 0;
+  }
+
+  .boost-btn {
+    margin-bottom: 0;
+  }
 }
 
 /* Секція одинадцять ФУТЕР */
@@ -1309,4 +1337,26 @@ button {
   line-height: 1.875;
   text-align: center;
   color: #22343d;
+}
+
+@media screen and (min-width: 1400px) {
+  .footer-container {
+    flex-direction: row;
+    padding-top: 100px;
+  }
+
+  .logo-socials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+
+  .footer-socials {
+    margin-bottom: 0;
+    gap: 16px;
+  }
 }
