@@ -1349,8 +1349,10 @@ button {
 @media screen and (min-width: 1400px) {
   .footer-container {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 100px;
+    padding-bottom: 0;
   }
 
   .logo-socials {
@@ -1388,9 +1390,15 @@ button {
 
   .footer-right {
     align-items: flex-start;
+    margin-bottom: 16px;
   }
 
   .footer-text {
     text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .footer-btn {
+    margin-bottom: 0;
   }
 }
