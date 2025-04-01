@@ -1306,6 +1306,8 @@ button {
 }
 
 .footer-signup {
+  display: flex;
+  align-items: center;
   width: 325px;
   height: 48px;
   margin-bottom: 21px;
@@ -1323,6 +1325,10 @@ button {
   border-radius: 4px;
   width: 325px;
   height: 48px;
+}
+
+.footer-signup-icon {
+  display: none;
 }
 
 .footer-btn {
@@ -1400,5 +1406,37 @@ button {
 
   .footer-btn {
     margin-bottom: 0;
+  }
+
+  .footer-signup {
+    position: relative;
+  }
+
+  .footer-input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Додаємо відступ справа */
+  }
+
+  .footer-signup-icon {
+    display: block; /* Показуємо іконку на десктопі */
+    position: absolute;
+    left: 10px; /* Розміщуємо іконку ліворуч */
+    fill: #02897a;
+  }
+
+  .footer-input::placeholder {
+    color: transparent; /* Приховуємо стандартний placeholder */
+  }
+
+  .footer-input::before {
+    content: "Enter your phone number"; /* Новий placeholder */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #02897a;
   }
 }
