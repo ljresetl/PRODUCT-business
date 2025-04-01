@@ -290,6 +290,9 @@ button {
 
   .one-section-h {
     font-size: 40px;
+    height: 120px;
+    text-align: left;
+    width: 452px;
   }
 
   .primary {
