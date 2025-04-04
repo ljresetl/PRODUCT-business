@@ -1574,12 +1574,14 @@ button {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
   z-index: 1000;
 }
 
 .scroll-btn {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #02897a;
   color: white;
   border: none;
   border-radius: 50%;
