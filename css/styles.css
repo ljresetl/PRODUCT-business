@@ -153,22 +153,23 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Трохи прозоре чорне тло */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9; /* Щоб вона була поверх основного контенту */
 }
 
 .mobile-menu.open ~ .mobile-menu-overlay {
-  display: block; /* Показати накладку, коли меню відкрите */
+  display: block; /*Показати накладку, коли меню відкрите  */
 }
 
 /* Мобільне меню */
 .mobile-menu {
+  padding: 10px;
   position: fixed;
   top: 0;
   right: -80%; /* Початково приховане за межами екрану */
   width: 80%;
   height: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
   z-index: 10; /* Вище накладки */
   transition: right 0.3s ease-in-out;
 }
@@ -177,25 +178,73 @@ button {
   right: 0; /* Відкривається в межах екрану */
 }
 
+.close-mobile-menu {
+  padding: 0;
+}
+
 .mobile-menu-header {
-  padding: 10px;
   text-align: right;
 }
 
 .mobile-menu-list {
-  list-style: none;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .mobile-menu-link {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
 }
 
-.mobile-auth-buttons {
-  padding: 20px;
+.sign-in-menu {
+  width: 105px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #173a56;
+  padding: 9px 23px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.sign-in-menu:hover {
+  width: 113px;
+  height: 42px;
+  background-color: #02897a;
+  color: #fff;
+}
+
+.sign-in-menu:focus {
+  background-color: #02897a;
+  color: #fff;
+}
+
+.sign-up-menu {
+  width: 105px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #173a56;
+  padding: 9px 21px;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+
+.sign-up-menu:hover {
+  width: 113px;
+  height: 42px;
+  background-color: #02897a;
+  color: #fff;
+}
+
+.sign-up-menu:focus {
+  background-color: #02897a;
+  color: #fff;
 }
 
 @media screen and (min-width: 1400px) {
@@ -271,6 +320,11 @@ button {
   .sign-up:focus {
     background-color: #02897a;
     color: #fff;
+  }
+
+  .mobile-menu-overlay,
+  .mobile-menu {
+    display: none;
   }
 }
 
