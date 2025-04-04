@@ -145,6 +145,59 @@ button {
   justify-content: center;
 }
 
+/* В стилях додаємо накладку для мобільного меню */
+.mobile-menu-overlay {
+  display: none; /* Спочатку накладка прихована */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Трохи прозоре чорне тло */
+  z-index: 9; /* Щоб вона була поверх основного контенту */
+}
+
+.mobile-menu.open ~ .mobile-menu-overlay {
+  display: block; /* Показати накладку, коли меню відкрите */
+}
+
+/* Мобільне меню */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -80%; /* Початково приховане за межами екрану */
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  z-index: 10; /* Вище накладки */
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  right: 0; /* Відкривається в межах екрану */
+}
+
+.mobile-menu-header {
+  padding: 10px;
+  text-align: right;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  padding: 20px;
+}
+
+.mobile-menu-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-auth-buttons {
+  padding: 20px;
+}
+
 @media screen and (min-width: 1400px) {
   .menu-list {
     display: flex;
