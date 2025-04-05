@@ -149,6 +149,14 @@ button {
   justify-content: center;
 }
 
+.svg-logo {
+  background-color: transparent;
+}
+
+.burger-menu {
+  background-color: transparent;
+}
+
 /* В стилях додаємо накладку для мобільного меню */
 .mobile-menu-overlay {
   display: none; /* Спочатку накладка прихована */
