@@ -29,6 +29,7 @@
             class="main-logo-button-svg"
             title="logo"
             id="buttonlogo"
+            aria-label="buttonlogo"
           >
             <svg class="svg-logo" width="40" height="36">
               <use href="./images/icons.svg#icon-logo"></use>
@@ -58,6 +59,7 @@
           class="burger-menu"
           title="burger"
           id="button-burger"
+          aria-label="button-burger"
         >
           <svg class="burger-menu-icon" width="28" height="31">
             <use href="./images/icons.svg#burger-menu"></use>
@@ -87,8 +89,12 @@
         <li><a href="#resources" class="mobile-menu-link">Resources</a></li>
       </ul>
       <div class="mobile-auth-buttons">
-        <button type="button" class="sign-in-menu">Sign In</button>
-        <button type="button" class="sign-up-menu">Sign Up</button>
+        <button type="button" class="sign-in-menu" aria-label="sign-in-menu">
+          Sign In
+        </button>
+        <button type="button" class="sign-up-menu" aria-label="sign-up-menu">
+          Sign Up
+        </button>
       </div>
     </div>
 
@@ -136,10 +142,15 @@
               </p>
             </div>
             <div class="buttons">
-              <button type="button" href="#" class="btn primary">
+              <button
+                type="button"
+                href="#"
+                class="btn primary"
+                aria-label="btn-primary"
+              >
                 Get started
               </button>
-              <a href="#" class="btn secondary">
+              <a href="#" class="btn secondary" aria-label="btn-secondary">
                 <svg class="icon-triangle" width="20" height="17">
                   <use href="./images/icons.svg#icon-Triangle"></use>
                 </svg>
@@ -808,7 +819,13 @@
                 <li>Notifications</li>
                 <li>Landing Pages</li>
               </ul>
-              <button type="button" class="pricing-btn">Order Now</button>
+              <button
+                type="button"
+                class="pricing-btn"
+                aria-label="pricing-btn"
+              >
+                Order Now
+              </button>
             </div>
           </div>
         </div>
@@ -1020,7 +1037,9 @@
             <h2 class="boost-title">
               Join 100 Companies who boost their business with Product
             </h2>
-            <button type="button" class="boost-btn">Get This</button>
+            <button type="button" class="boost-btn" aria-label="boost-btn">
+              Get This
+            </button>
           </div>
           <div class="boost-images">
             <picture>
@@ -1149,8 +1168,16 @@
     </main>
 
     <div class="scroll-buttons">
-      <button class="scroll-btn up" aria-label="Scroll to top">↑</button>
-      <button class="scroll-btn down" aria-label="Scroll to bottom">↓</button>
+      <button type="button" class="scroll-btn up" aria-label="Scroll to top">
+        ↑
+      </button>
+      <button
+        type="button"
+        class="scroll-btn down"
+        aria-label="Scroll to bottom"
+      >
+        ↓
+      </button>
     </div>
   </body>
 </html>
